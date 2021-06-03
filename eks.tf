@@ -1,6 +1,3 @@
-
-## Please add below code
-```
 module "my-cluster" {
         source = "terraform-aws-modules/eks/aws"
         version = "12.0.0"
@@ -18,7 +15,6 @@ module "my-cluster" {
         tags = var.tags
 }
 
-
 output "cluster_id" {
         value = module.my-cluster.cluster_id
 }
@@ -34,5 +30,3 @@ output "cluster_security_group_id" {
 output "workers_asg_names" {
         value = module.my-cluster.workers_asg_names
 }
-
-```
